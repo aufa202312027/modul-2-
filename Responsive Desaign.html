@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Gaya default untuk desktop */
+    body {
+      background-color: #2196F3; /* biru */
+      font-size: 18px;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: #0b7dda;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Responsive untuk layar kecil */
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: #f44336; /* merah */
+        font-size: 14px;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr; /* 1 kolom */
+      }
+
+      .grid-item {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
